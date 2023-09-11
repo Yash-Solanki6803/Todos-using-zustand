@@ -53,6 +53,7 @@
 .row {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .page {
@@ -69,4 +70,14 @@
 
 .page::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .main {
+    padding: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
 }

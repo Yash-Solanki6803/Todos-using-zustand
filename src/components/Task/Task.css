@@ -103,3 +103,37 @@
   color: white;
   text-shadow: 0 0 3px black;
 }
+
+@media screen and (max-width: 560px) {
+  .task {
+    height: 125px;
+    width: 125px;
+  }
+
+  .taskContent {
+    height: 125px;
+    width: 125px;
+    font-size: 1rem;
+  }
+
+  .task::after {
+    height: 125px;
+    width: 125px;
+  }
+
+  .task::before {
+    height: 125px;
+    width: 125px;
+  }
+
+  .task-title {
+    font-size: 1.2rem;
+  }
+
+  .close {
+    height: 30px;
+    width: 30px;
+    font-size: 0.8rem;
+    margin: 5px;
+  }
+}
