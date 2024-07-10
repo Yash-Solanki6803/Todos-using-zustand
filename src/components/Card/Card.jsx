@@ -56,12 +56,13 @@ const Card = () => {
               console.log(task);
               if(task.title==""){
                 alert("Please add something in task");
+                return;
               }
               addTask(task);
               toggleModal();
               console.log(tasks);
             }}
-            disabled = {task.title}
+            disabled = {task.title==""}
             className="submit-btn"
           >
             Add
