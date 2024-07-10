@@ -54,6 +54,9 @@ const Card = () => {
           <button
             onClick={() => {
               console.log(task);
+              if(task.title==""){
+                alert("Please add something in task");
+              }
               addTask(task);
               toggleModal();
               console.log(tasks);
