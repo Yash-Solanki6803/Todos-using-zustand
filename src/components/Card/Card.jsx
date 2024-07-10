@@ -58,6 +58,7 @@ const Card = () => {
               toggleModal();
               console.log(tasks);
             }}
+            disabled = {task.title}
             className="submit-btn"
           >
             Add
